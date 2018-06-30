@@ -1,0 +1,102 @@
+.news-card {
+  margin-bottom: 30px;
+  @include scr-lg-min {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .container {
+    padding: 0;
+    @include scr-lg-min {
+      padding: 0 15px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    background: $color-white;
+    @include scr-sm-min {
+      flex-direction: row;
+    }
+  }
+  &__thumb {
+    @include scr-sm-min {
+      flex: 1 1 0;
+    }
+  }
+  &__details {
+    padding: 15px;
+    @include scr-sm-min {
+      padding: 33px 30px;
+      flex: 1 1 0;
+    }
+  }
+  &__title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    @include scr-sm-min {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+    @include scr-lg-min {
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+    + p {
+      display: none;
+      margin-bottom: 30px;
+      @include scr-sm-min {
+        display: block;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  p {
+    color: $color-text;
+    @include scr-sm-min {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    @include scr-lg-min {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  &__author {
+    display: flex;
+  }
+  &__avatar {
+    margin-right: 15px;
+    @include scr-sm-min {
+      margin-right: 10px;
+    }
+  }
+  p.news-card__author-name {
+    color: $color-grey;
+    font-size: 16px;
+    margin-bottom: 8px;
+    @include scr-sm-min {
+      font-size: 12px;
+      margin-bottom: 3px;
+    }
+    @include scr-lg-min {
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+  }
+  p.news-card__post-time {
+    font-size: 14px;
+    color: $color-grey;
+    @include scr-sm-min {
+      font-size: 10px;
+    }
+    @include scr-lg-min {
+      font-size: 14px;
+    }
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
