@@ -1,0 +1,28 @@
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  border: 0 none;
+  min-width: 100px;
+  height: 37px;
+  border-radius:100px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  &.btn--outline-primary {
+    border: 2px solid $color-white;
+    color: $color-white;
+    background: transparent;
+    &:hover {
+      background:$color-white;
+      color: $color-primary;
+    }
+  }
+  &.btn--lg {
+    font-size: 16px;
+    min-width: 192px;
+    height: 50px;
+  }
+}
+

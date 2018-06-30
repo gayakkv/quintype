@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  max-width: 1202px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-direction: column;
+  @include scr-sm-min {
+    flex-direction: row;
+  }
+}
+.col {
+  flex: 1 0 0%;
+  margin-right: 15px;
+  margin-left: 15px;
+}

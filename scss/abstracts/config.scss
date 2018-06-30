@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+/* Font Family */
+$base-font-family: 'Lato', sans-serif;
+
+/*Common Colors */
+$color-primary: #2f73e4;
+$color-primary-darker: darken($color-primary, 8%);
+$color-body: #cccccc;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-text: #5c5c5c;
+$color-title: #232323;
+$color-title-dark: #222222;
+$color-grey: #818181;
+$color-bg-light: #f4f4f4;
+$color-bg-dark: #212121;
+$color-border: #d8d8d8;
+//Theme colors
+$color-pink: #f260a4;
+$color-blue: #6093f2;
+$color-yellow: #edd30d;
+$color-coral: #f26c60;
+
+/* Font sizes */
+$fs-nano: 12px;
+$fs-micro: 14px;
+$fs-milli: 16px;
+$fs-xx-small: 18px;
+$fs-x-small: 20px;
+$fs-small: 22px;
+$fs-regular: 24px;
+$fs-medium: 26px;
+$fs-large: 28px;
+$fs-x-large: 30px;
+$fs-xx-large: 32px;
+$fs-mega: 34px;
+$fs-giga: 38px;
+
+/* Font weights */
+$fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 700;
+
+/* Min breakpoint width */
+$scr-xs-min: 576px;
+$scr-sm-min: 768px;
+$scr-md-min: 992px;
+$scr-lg-min: 1200px;
+$scr-xl-min: 1500px;
+
+/* Max breakpoint width */
+$scr-xs-max: 575px;
+$scr-sm-max: 767px;
+$scr-md-max: 991px;
+$scr-lg-max: 1199px;
+
+/* Responsive breakpoints for min widths */
+@mixin scr-xs-min {
+  @media (min-width: #{$scr-xs-min}) {
+    @content;
+  }
+}
+@mixin scr-sm-min {
+  @media (min-width: #{$scr-sm-min}) {
+    @content;
+  }
+}
+@mixin scr-md-min {
+  @media (min-width: #{$scr-md-min}) {
+    @content;
+  }
+}
+@mixin scr-lg-min {
+  @media (min-width: #{$scr-lg-min}) {
+    @content;
+  }
+}
+@mixin scr-xl-min {
+  @media (min-width: #{$scr-xl-min}) {
+    @content;
+  }
+}
+/* Responsive breakpoints for max widths */
+@mixin scr-sm-max {
+  @media (max-width: #{$scr-sm-max}) {
+    @content;
+  }
+}
+@mixin scr-md-max {
+  @media (max-width: #{$scr-md-max}) {
+    @content;
+  }
+}
+@mixin scr-lg-max {
+  @media (max-width: #{$scr-lg-max}) {
+    @content;
+  }
+}
+
