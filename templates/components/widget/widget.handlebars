@@ -1,0 +1,15 @@
+<div class="widget {{widgetSize}}">
+    {{#if isThumb}}
+      <div class="widget__img">
+        <img src="{{imgpath}}" class="img-fluid" alt="dummy">
+      </div>
+    {{/if}}
+    <div class="widget__content">
+      {{#if isCategory}}
+        <h5 class="category {{categoryStyle}}"><span>{{categoryName}}</span></h5>
+      {{/if}}
+      <h4 class="widget__title">{{maintitle}}</h4>
+      <p>{{content}}</p>
+      <p class="widget__author">{{ authorname }}</p>
+    </div>
+</div>

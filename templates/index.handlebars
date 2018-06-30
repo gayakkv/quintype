@@ -4,6 +4,17 @@
   <body>
     {{> header/header}}
     {{> components/newscard/newscard}}
+    <div class="container">
+      <div class="row mb--30">
+        <div class="col">
+          {{> components/widget/widget isThumb=true isCategory=true imgpath="images/widget-1.jpg" categoryName="business" categoryStyle="category--coral" maintitle="Jenny Lawson Is preparing a new dish and It’s Sort of a Coloring Dish" content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled."
+          authorname="Thomas Edison"
+          }}
+        </div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+      </div>
+    </div>
     {{> footer/footer}}
   </body>
 </html>
