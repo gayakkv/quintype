@@ -1,0 +1,26 @@
+.slick-slider {
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: scale(.6) translateY(-50%);
+    height: 70px;
+    width: 70px;
+    border: 0;
+    font-size: 0;
+    outline: none;
+    background: url(../images/icons/icon_arrow-right.svg) no-repeat center center;
+    @include scr-sm-min {
+      transform: translateY(-50%);
+    }
+    &.slick-next {
+      right: 20px;
+    }
+    &.slick-prev {
+      left: 20px;
+      transform: scale(.6) translateY(-50%) rotate(180deg);
+      @include scr-sm-min {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+}
