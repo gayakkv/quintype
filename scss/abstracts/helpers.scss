@@ -7,12 +7,27 @@
     display: none;
   }
 }
+.d-md-only-none {
+  @include scr-tab {
+    display: none;
+  }
+}
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
+.mb--sm-30 {
+  @include scr-md-max {
+    margin-bottom: 30px;
+  }
+}
 .mb--30 {
   margin-bottom: 30px;
+}
+.mb--lg-40 {
+  @include scr-md-min {
+    margin-bottom: 40px;
+  }
 }
 strong {
   font-weight: $fw-bold;

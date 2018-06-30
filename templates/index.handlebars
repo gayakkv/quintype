@@ -5,14 +5,20 @@
     {{> header/header}}
     {{> components/newscard/newscard}}
     <div class="container">
-      <div class="row mb--30">
-        <div class="col">
+      <div class="row">
+        <div class="col mb--lg-40 mb--sm-30">
           {{> components/widget/widget isThumb=true isCategory=true imgpath="images/widget-1.jpg" categoryName="business" categoryStyle="category--coral" maintitle="Jenny Lawson Is preparing a new dish and It’s Sort of a Coloring Dish" content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled."
           authorname="Thomas Edison"
           }}
         </div>
-        <div class="col">2</div>
-        <div class="col">3</div>
+        <div class="col mb--sm-30">
+          <ul class="newsfeed">
+             {{> components/newsfeed/newsfeed categoryStyle="category--blue" categoryName="travel" heading="Airtel Offers 3 GB Free Data A Month To Customers Who Switch To Its 4G Service" author="Alex Parkinson" }}
+             {{> components/newsfeed/newsfeed categoryStyle="category--pink" categoryName="HEALTH & FITNESS" heading="Warning Letter For Ankleshwar Plant Sends Wockhardt Shares To Near 2.5-Year Low" author="Alice Doe" }}
+             {{> components/newsfeed/newsfeed categoryStyle="category--yellow" categoryName="SCIENCE" heading="Sundar Pichai Launches ‘Digital Unlocked’ Programme " author="Jonnathan Doe" }}
+          </ul>
+        </div>
+        <div class="col d-md-only-none">3</div>
       </div>
     </div>
     {{> footer/footer}}

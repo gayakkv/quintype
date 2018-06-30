@@ -96,4 +96,8 @@ $scr-lg-max: 1199px;
     @content;
   }
 }
-
+@mixin scr-tab {
+  @media only screen and (max-width: #{$scr-lg-max}) and (min-width: #{$scr-sm-min}){
+    @content;
+  }
+}

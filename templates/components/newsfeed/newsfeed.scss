@@ -1,0 +1,35 @@
+.newsfeed {
+  list-style: none;
+  padding: 0 15px;
+  @include scr-sm-min {
+    padding: 0;
+  }
+  &__title {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    @include scr-sm-min {
+      font-size: 18px;
+    }
+    @include scr-md-min {
+      font-size: 22px;
+    }
+  }
+  &__author {
+    font-size: 16px;
+    @include scr-sm-min {
+      font-size: 14px;
+    }
+  }
+  &__item {
+    padding: 17px 0;
+    border-top: 1px solid $color-border;
+    &:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
