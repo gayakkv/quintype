@@ -1,0 +1,16 @@
+.search {
+  display: flex;
+  align-items: flex-end;
+  &__group {
+  }
+  &__input {
+    background: transparent;
+    box-shadow: none;
+    border: 0;
+    color: $color-title-dark;
+    border-bottom: 1px solid $color-border;
+    height: 30px;
+    min-width: 320px;
+    display: none;
+  }
+}
