@@ -23,13 +23,26 @@
   }
   &__item {
     padding: 17px 0;
-    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
     &:first-child {
-      border-top: 0;
       padding-top: 0;
     }
     &:last-child {
       padding-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+  &.newsfeed--horizontal {
+    @include scr-tab {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .newsfeed__item {
+      @include scr-tab {
+        width: 50%;
+        padding: 20px 0 20px 0;
+      }
     }
   }
 }

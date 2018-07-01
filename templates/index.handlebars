@@ -7,20 +7,44 @@
     <div class="container">
       <div class="row">
         <div class="col mb--lg-40 mb--sm-30">
-          {{> components/widget/widget isThumb=true isCategory=true imgpath="images/widget-1.jpg" categoryName="business" categoryStyle="category--coral" maintitle="Jenny Lawson Is preparing a new dish and It’s Sort of a Coloring Dish" content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled."
+          {{> components/widget/widget isThumb=true isCategory=true isContent=true imgpath="images/widget-1.jpg" categoryName="business" categoryStyle="category--coral" maintitle="Jenny Lawson Is preparing a new dish and It’s Sort of a Coloring Dish" content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled."
           authorname="Thomas Edison"
           }}
         </div>
         <div class="col mb--sm-30">
           <ul class="newsfeed">
-             {{> components/newsfeed/newsfeed categoryStyle="category--blue" categoryName="travel" heading="Airtel Offers 3 GB Free Data A Month To Customers Who Switch To Its 4G Service" author="Alex Parkinson" }}
-             {{> components/newsfeed/newsfeed categoryStyle="category--pink" categoryName="HEALTH & FITNESS" heading="Warning Letter For Ankleshwar Plant Sends Wockhardt Shares To Near 2.5-Year Low" author="Alice Doe" }}
-             {{> components/newsfeed/newsfeed categoryStyle="category--yellow" categoryName="SCIENCE" heading="Sundar Pichai Launches ‘Digital Unlocked’ Programme " author="Jonnathan Doe" }}
+             {{> components/newsfeed/newsfeed isCategory=true categoryStyle="category--blue" categoryName="travel" heading="Airtel Offers 3 GB Free Data A Month To Customers Who Switch To Its 4G Service" author="Alex Parkinson" }}
+             {{> components/newsfeed/newsfeed isCategory=true categoryStyle="category--pink" categoryName="HEALTH & FITNESS" heading="Warning Letter For Ankleshwar Plant Sends Wockhardt Shares To Near 2.5-Year Low" author="Alice Doe" }}
+             {{> components/newsfeed/newsfeed isCategory=true categoryStyle="category--yellow" categoryName="SCIENCE" heading="Sundar Pichai Launches ‘Digital Unlocked’ Programme " author="Jonnathan Doe"}}
           </ul>
         </div>
         <div class="col d-md-only-none">3</div>
       </div>
-      {{> components/spotlight/spotlight}}
+      <div class="mb--lg-40 mb--sm-30">
+        {{> components/spotlight/spotlight}}
+      </div>
+      <h3 class="category category--blue category--lg"><span>Politics</span></h3>
+      <div class="row row-3">
+        <div class="col mb--lg-40 mb--sm-30">
+          {{> components/newshighlight/newshighlight}}
+        </div>
+        <div class="col mb--sm-30">
+          <div class="mb--20">
+            {{> components/widget/widget isThumb=true imgpath="images/widget-3.jpg" maintitle="Jenny Lawson Is Publishing a New Book and It’s Sort of a Coloring Book" authorname="Jonnathan Doe"}}
+          </div>
+          <div>
+            {{> components/widget/widget maintitle="Airtel Offers 3 GB Free Data A Month To Customers Who Switch To Its 4G Service" authorname="Alice Doe"}}
+          </div>
+        </div>
+        <div class="col col-sm-50">
+          <ul class="newsfeed newsfeed--horizontal">
+             {{> components/newsfeed/newsfeed heading="Airtel Offers 3 GB Free Data A Month To Customers Who Switch To Its 4G Service" author="Alex Parkinson" }}
+             {{> components/newsfeed/newsfeed heading="Warning Letter For Ankleshwar Plant Sends Wockhardt Shares To Near 2.5-Year Low" author="Alice Doe" }}
+             {{> components/newsfeed/newsfeed heading="Sundar Pichai Launches ‘Digital Unlocked’ Programme ’ Programme " author="Jonnathan Doe"}}
+             {{> components/newsfeed/newsfeed heading="Warning Letter For Ankleshwar Plant Sends Wockhardt Shares To Near 2.5-Year Low" author="Alice Doe"}}
+          </ul>
+        </div>
+      </div>
     </div>
     {{> footer/footer}}
   </body>

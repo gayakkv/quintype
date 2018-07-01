@@ -1,0 +1,39 @@
+.newshighlight {
+  &__content {
+    position: relative;
+    margin: 0;
+  }
+  &__desc {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    color: $color-white;
+    padding: 20px;
+  }
+  &__title {
+    color: $color-white;
+    font-size: 28px;
+    line-height:38px;
+    margin-bottom: 20px;
+    @include scr-sm-min {
+      font-size: 32px;
+      line-height:36px;
+    }
+    @include scr-md-min {
+      font-size: 34px;
+      line-height:40px;
+    }
+  }
+  &__author {
+    color: $color-white;
+    font-size: 16px;
+    @include scr-tab {
+      font-size: 14px;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
