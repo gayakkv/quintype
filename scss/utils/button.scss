@@ -1,15 +1,17 @@
 .btn {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
   border: 0 none;
   min-width: 100px;
-  height: 37px;
   border-radius:100px;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
+  @include scr-sm-min {
+    font-size: 16px;
+  }
   &.btn--outline-primary {
     border: 2px solid $color-white;
     color: $color-white;

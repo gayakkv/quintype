@@ -12,6 +12,11 @@
     display: none;
   }
 }
+.d-sm-only-none {
+  @include scr-sm-max {
+    display: none;
+  }
+}
 .img-fluid {
   max-width: 100%;
   height: auto;

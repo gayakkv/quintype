@@ -7,7 +7,7 @@
     <div class="container">
       <div class="row">
         <div class="col mb--lg-40 mb--sm-30">
-          {{> components/widget/widget isThumb=true isCategory=true isContent=true imgpath="images/widget-1.jpg" categoryName="business" categoryStyle="category--coral" maintitle="Jenny Lawson Is preparing a new dish and It’s Sort of a Coloring Dish" content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled."
+          {{> components/widget/widget isThumb=true isCategory=true isContent=true imgpath="images/widget-1.jpg" categoryName="business" categoryStyle="category--coral" maintitle="Jenny Lawson Is preparing a new dish and It’s Sort of a Coloring Dish" content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled known printer took a galley of type and scrambled."
           authorname="Thomas Edison"
           }}
         </div>
@@ -18,7 +18,14 @@
              {{> components/newsfeed/newsfeed isCategory=true categoryStyle="category--yellow" categoryName="SCIENCE" heading="Sundar Pichai Launches ‘Digital Unlocked’ Programme " author="Jonnathan Doe"}}
           </ul>
         </div>
-        <div class="col d-md-only-none">3</div>
+        <div class="col mb--lg-40 mb--sm-30 d-md-only-none">
+          <div class="mb--30 d-sm-only-none">
+            <a href="https://www.quintype.com/" target="_blank" title="Quintype">
+              <img src="images/qt_ad.png" class="img-fluid" alt="Publish with quintype">
+            </a>
+          </div>
+          {{> components/newsletter/newsletter}}
+        </div>
       </div>
       <div class="mb--lg-40 mb--sm-30">
         {{> components/spotlight/spotlight}}
@@ -45,7 +52,7 @@
           </ul>
         </div>
       </div>
-      <h3 class="category category--pink   category--lg"><span>Food & Health</span></h3>
+      <h3 class="category category--pink category--lg"><span>Food & Health</span></h3>
       <div class="row">
         <div class="col mb--lg-40 mb--sm-30">
           <ul class="newsstream">

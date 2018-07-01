@@ -1,0 +1,27 @@
+.newsletter {
+  background: $color-primary;
+  text-align: center;
+  padding: 20px 36px;
+  i {
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $color-white;
+    font-weight: $fw-regular;
+    @include scr-sm-min {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  .form__control {
+    margin-bottom: 25px;
+  }
+  .btn {
+    min-width: 125px;
+  }
+}
