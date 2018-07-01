@@ -110,3 +110,20 @@ strong {
     background: $color-coral;
   }
 }
+.l-link {
+  font-size: 24px;
+  color: $color-black;
+  display: block;
+  @include scr-sm-min {
+    display: none;
+  }
+  span {
+    vertical-align: middle;
+  }
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
