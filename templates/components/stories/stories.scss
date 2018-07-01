@@ -1,0 +1,59 @@
+.stories {
+  padding: 50px 0;
+  background: $color-white;
+  &__item {
+    display: flex;
+    margin-bottom: 30px;
+    @include scr-sm-min {
+      margin-bottom: 35px;
+    }
+  }
+  &__thumb {
+    margin: 0;
+  }
+  &__content {
+    padding: 0 10px;
+    @include scr-sm-min {
+      max-width: 100%;
+      padding: 0 25px;
+    }
+    @include scr-lg-min {
+      max-width: 500px;
+      padding: 0 30px;
+    }
+  }
+  &__posttitle {
+    color: $color-black;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: $fw-regular;
+    @include scr-sm-min {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+    @include scr-lg-min {
+      font-size: 30px;
+    }
+  }
+  &__author {
+    color: $color-grey;
+    margin-bottom: 4px;
+    font-size: 12px;
+    @include scr-sm-min {
+      font-size: 14px;
+    }
+    @include scr-lg-min {
+      font-size: 18px;
+    }
+  }
+  &__postdate {
+    color: $color-grey;
+    font-size: 10px;
+    @include scr-sm-min {
+      font-size: 12px;
+    }
+    @include scr-lg-min {
+      font-size: 14px;
+    }
+  }
+}

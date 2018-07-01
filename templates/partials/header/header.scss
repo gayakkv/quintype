@@ -4,6 +4,11 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  background: $color-white;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
   &__brand {
     display: flex;
     align-items: center;
