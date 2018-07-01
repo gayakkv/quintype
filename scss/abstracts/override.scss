@@ -23,4 +23,39 @@
       }
     }
   }
+  .slick-dots {
+    position: absolute;
+    bottom: -28px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    li {
+      position: relative;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+      &.slick-active button {
+        background: $color-primary-darker;
+        opacity: 1;
+      }
+      button {
+        display: block;
+        width: 16px;
+        height: 16px;
+        padding: 5px;
+        cursor: pointer;
+        border: 0;
+        outline: none;
+        background: $color-primary;
+        border-radius: 100%;
+        font-size: 0;
+      }
+    }
+  }
 }

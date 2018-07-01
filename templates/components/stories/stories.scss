@@ -1,6 +1,9 @@
 .stories {
   padding: 50px 0;
   background: $color-white;
+  @include scr-lg-min {
+    padding: 50px 0 100px;
+  }
   &__item {
     display: flex;
     margin-bottom: 30px;

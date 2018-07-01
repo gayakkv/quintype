@@ -9,4 +9,14 @@ $(document).ready(function() {
     slidesToShow: 1,
     slidesToScroll: 1
   });
+  $('.stories__slider').slick({
+    infinite: true,
+    dots: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+  $( ".search .icon" ).click(function() {
+    $( ".search__group").toggleClass( "show" );
+  });
 }())

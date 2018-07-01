@@ -1,7 +1,33 @@
+.form {
+  &__control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+}
 .search {
-  display: flex;
-  align-items: flex-end;
+  position: relative;
+  .icon {
+    display: block;
+  }
   &__group {
+    opacity: 0;
+    transition: all .5s ease;
+    position: absolute;
+    right: 33px;
+    bottom: -2px;
+    background: $color-white;
+    &.show {
+      opacity: 1;
+    }
   }
   &__input {
     background: transparent;
@@ -10,7 +36,10 @@
     color: $color-title-dark;
     border-bottom: 1px solid $color-border;
     height: 30px;
-    min-width: 320px;
-    display: none;
+    min-width: 300px;
+    &:focus {
+      border-bottom: 1px solid $color-primary;
+      outline: 0;
+    }
   }
 }

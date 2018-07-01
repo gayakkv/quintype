@@ -5,11 +5,19 @@
     display: block;
   }
 }
-.icon-search {
+.icon--search {
   cursor: pointer;
   &:before {
     height: 30px;
     width: 30px;
     background: url("../../images/icons/icon_search.svg") no-repeat center center;
+  }
+}
+.icon--message {
+  &:before {
+    display: inline-block;
+    width: 32px;
+    height: 30px;
+    background: url("../../images/icons/icon_message.svg") no-repeat center center;
   }
 }
