@@ -11,6 +11,7 @@
   margin-right: -15px;
   margin-left: -15px;
   flex-direction: column;
+  flex-wrap : wrap;
   @include scr-sm-min {
     flex-direction: row;
   }
@@ -19,4 +20,14 @@
   flex: 1 0 0%;
   margin-right: 15px;
   margin-left: 15px;
+}
+.row-3 {
+  .col {
+    min-width: 220px;
+  }
+  .col-sm-50 {
+    @include scr-tab {
+      flex: 1 0 50%;
+    }
+  }
 }
