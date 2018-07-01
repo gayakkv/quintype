@@ -45,6 +45,21 @@
           </ul>
         </div>
       </div>
+      <h3 class="category category--pink   category--lg"><span>Food & Health</span></h3>
+      <div class="row">
+        <div class="col mb--lg-40 mb--sm-30">
+          <ul class="newsstream">
+            {{> components/newsstream/newsstream imgPath="images/news_stream-1.jpg" mainTitle="This Is What 300 Calories Look Like, Think Twice Before You Eat!" authorName="Jonnathan Doe"}}
+            {{> components/newsstream/newsstream imgPath="images/news_stream-2.jpg" mainTitle="Lin-Manuel Miranda says Donald Trump is spreading ‘a virulent strain of a virus’" authorName="Alex Parkinson"}}
+            {{> components/newsstream/newsstream imgPath="images/news_stream-3.jpg" mainTitle="Airtel Offers 3 food Data A Month To Customers Who Switch To Its food service" authorName="Matt Wilson"}}
+          </ul>
+        </div>
+        <div class="col mb--sm-30">
+            {{> components/widget/widget isThumb=true isContent=true imgpath="images/widget-2.jpg" widgetSize="widget--md" maintitle="Jenny Lawson Is preparing a new dish and It’s Sort of a Coloring Dish" content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled."
+            authorname="Thomas Edison"
+            }}
+        </div>
+      </div>
     </div>
     {{> footer/footer}}
   </body>

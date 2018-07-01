@@ -5,13 +5,15 @@
       </div>
     {{/if}}
     <div class="widget__content">
-      {{#if isCategory}}
-        <h5 class="category {{categoryStyle}}"><span>{{categoryName}}</span></h5>
-      {{/if}}
-      <h4 class="widget__title">{{maintitle}}</h4>
-      {{#if isContent}}
-        <p>{{content}}</p>
-      {{/if}}
+      <div>
+        {{#if isCategory}}
+          <h5 class="category {{categoryStyle}}"><span>{{categoryName}}</span></h5>
+        {{/if}}
+        <h4 class="widget__title">{{maintitle}}</h4>
+        {{#if isContent}}
+          <p>{{content}}</p>
+        {{/if}}
+      </div>
       <p class="widget__author">{{ authorname }}</p>
     </div>
 </div>
